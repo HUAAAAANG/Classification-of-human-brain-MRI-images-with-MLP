@@ -1,4 +1,4 @@
-%-- This function is used to séparer l'ensemble des images en trois
+%-- This function is used to split datasets in 3
 %groupes(Train,Valid,Test)
 function [database,indices] = structure_database(img1,img2,img3,img4,img5,img6,img7,img8,img9,nclasse)
 
