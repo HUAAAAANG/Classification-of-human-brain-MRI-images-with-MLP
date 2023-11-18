@@ -223,7 +223,7 @@ function [cost] = compute_cost(AL, Y)
        cost = cost + (- sum( Y(i,:).*log(AL(i,:)+eps) + (1-Y(i,:)).*log((1-AL(i,:))+eps) ));
     end
     
-    cost = cost/m; % I added this line so that costs_train and costs_valid are comparable
+    cost = cost/m; % make costs_train and costs_valid are comparable
     
 end
 
